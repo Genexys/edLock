@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edlock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="edlock_slider" class="edlock-slider">
+    <div id="edlock_slider_content" class="edlock-slider__content">
+      <div id="first_step" class="first-step">
+        <h3 class="edlock-slider__title edlock-slider__title--first">Выбери приложения, которые используешь в течение дня</h3>
+        <div class="app-grid">
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon.png" alt="Соц. Сети">
+              <span>Соц. Сети</span>
+          </label>
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon-2.png" alt="Развлечения">
+              <span>Развлечения</span>
+          </label>
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon-3.png" alt="Стриминг">
+              <span>Стриминг</span>
+          </label>
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon-4.png" alt="Новости">
+              <span>Новости</span>
+          </label>
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon-5.png" alt="Мессенджеры">
+              <span>Мессенджеры</span>
+          </label>
+          <label class="app-item">
+              <input type="checkbox" class="app-item__input">
+              <img src="img/icons_app/icon-6.png" alt="Другое">
+              <span>Другое</span>
+          </label>
+        </div>
+        <button disabled type="button" id="first-step-submit" class="select-button select-button--width">Выбрать</button>
+      </div>
+
+      <div id="second_step" class="second-step">
+        <h3 class="edlock-slider__title">Давай посчитаем возможности с EdLock</h3>
+        
+        <div class="second-step__content">
+          <div class="word-knowledge">
+            <span class="word-knowledge__count-number">X</span>          
+            <span class="word-knowledge__count-text">Слов, ты сможешь выучить за 6 месяцев использования EdLock</span>
+          </div>
+  
+          <div class="level-knowledge">
+            <div class="level-knowledge__text">
+              <span class="level-knowledge__title">
+                Ты сможешь спросить местных, где лучший стритфуд. 
+              </span>
+              <span class="level-knowledge__description">
+                Это соответствует уровню:
+              </span>
+            </div>
+  
+            <div class="level-knowledge__level">
+              X
+            </div>
+          </div>
+  
+          <div class="how-hours">
+            <div class="how-hours__text">
+              <span class="how-hours__title">
+                Сколько часов ты проводишь в приложениях?
+              </span>
+              <div class="how-hours__slider">
+                <span class="how-hours__slider-text">
+                  <span class="slider-value">
+                   0
+                  </span>
+                  <i>часов</i></span>
+                <div class="custom-slider">
+                  <div class="slider-track"></div>
+                  <div class="slider-progress"></div>
+                  <div class="slider-thumb">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                      <circle cx="12.5" cy="12.5" r="9.55882" fill="white" stroke="#A63EF8" stroke-width="5.88235"/>
+                    </svg>
+                  </div>
+                  <div class="slider-start-value"></div>
+                  <div class="slider-end-value"></div>
+                  <input type="range" min="0" max="12" value="0" class="slider-input">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button disabled type="button" id="second-step-submit" class="select-button select-button--width">Продолжить</button>
+      </div>
+
+      <div id="final-step" class="final-step">
+        <div class="final-step__content">
+          <h3 class="edlock-slider__title">А сейчас посмотрим как работает EdLock</h3>
+          
+          <div class="final-step__img-wrapper">
+            <img src="img/final_screen_phone.png" alt="phone">
+          
+            <div class="final-step__img-gradient">
+              <svg xmlns="http://www.w3.org/2000/svg" width="375" height="341" viewBox="0 0 375 341" fill="none">
+                <g filter="url(#filter0_f_1_154)">
+                  <path d="M-78 74.7442C-78 74.7442 49.9487 108.206 107 113.093C227 123.372 453 70 453 70V546H-78V74.7442Z" fill="white"/>
+                </g>
+                <defs>
+                  <filter id="filter0_f_1_154" x="-148" y="0" width="671" height="616" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="35" result="effect1_foregroundBlur_1_154"/>
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <a class="select-button select-button--finish">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="icn_20_apple">
+            <path id="Union" d="M15.592 15.4168C14.9004 16.4502 14.167 17.4585 13.0504 17.4752C11.9337 17.5002 11.5754 16.8168 10.3087 16.8168C9.0337 16.8168 8.64203 17.4585 7.5837 17.5002C6.49203 17.5418 5.66703 16.4002 4.96703 15.3918C3.54203 13.3335 2.45036 9.54183 3.91703 6.99183C4.64203 5.72516 5.94203 4.92516 7.35036 4.90016C8.41703 4.8835 9.4337 5.62516 10.092 5.62516C10.742 5.62516 11.9754 4.7335 13.267 4.86683C13.8087 4.89183 15.3254 5.0835 16.3004 6.51683C16.2254 6.56683 14.492 7.5835 14.5087 9.69183C14.5337 12.2085 16.717 13.0502 16.742 13.0585C16.717 13.1168 16.392 14.2585 15.592 15.4168ZM10.8337 2.0835C11.442 1.39183 12.4504 0.866829 13.2837 0.833496C13.392 1.8085 13.0004 2.79183 12.417 3.49183C11.842 4.20016 10.892 4.75016 9.9587 4.67516C9.8337 3.71683 10.3004 2.71683 10.8337 2.0835Z" fill="white"/>
+            </g>
+          </svg>
+            
+          <span>
+            Скачать EdLock
+          </span>  
+        </a>
+
+        <a href="" class="select-button select-button--transparent">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="icn_20_share">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M9.97836 2.21301C10.2665 1.929 10.7335 1.929 11.0216 2.21301L14.7102 5.84938C14.9983 6.13339 14.9983 6.59388 14.7102 6.8779C14.4221 7.16191 13.955 7.16191 13.6669 6.8779L11.2377 4.48306V13.0303C11.2377 13.432 10.9074 13.7576 10.5 13.7576C10.0926 13.7576 9.7623 13.432 9.7623 13.0303V4.48306L7.33311 6.8779C7.04502 7.16191 6.57793 7.16191 6.28984 6.8779C6.00175 6.59388 6.00175 6.13339 6.28984 5.84938L9.97836 2.21301ZM3.7377 10.4848C4.14513 10.4848 4.47541 10.8105 4.47541 11.2121V16.0606C4.47541 16.1892 4.52722 16.3125 4.61946 16.4034C4.71169 16.4944 4.83678 16.5455 4.96721 16.5455H16.0328C16.1632 16.5455 16.2883 16.4944 16.3805 16.4034C16.4728 16.3125 16.5246 16.1892 16.5246 16.0606V11.2121C16.5246 10.8105 16.8549 10.4848 17.2623 10.4848C17.6697 10.4848 18 10.8105 18 11.2121V16.0606C18 16.575 17.7927 17.0683 17.4238 17.432C17.0549 17.7957 16.5545 18 16.0328 18H4.96721C4.44548 18 3.94511 17.7957 3.57618 17.432C3.20726 17.0683 3 16.575 3 16.0606V11.2121C3 10.8105 3.33028 10.4848 3.7377 10.4848Z" fill="#414265"/>
+            </g>
+          </svg>
+            
+          <span>
+            Поделиться с другом
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
