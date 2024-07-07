@@ -18,7 +18,7 @@ body {
 .second-step {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/bg-second-stepsvg.svg);
+  background-image: url(https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/bg-second-stepsvg.svg);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 76px;
@@ -27,8 +27,10 @@ body {
 .edlock-slider {
   max-width: 375px;
   width: 100%;
-  height: 812px;
+  height: 636px;
+  margin-top: 20px;
   margin-inline: auto;
+  margin-bottom: 100px;
   padding-top: calc(var(--padding-size) * 4);
   /* padding-inline: calc(var(--padding-size) * 2); */
   padding-bottom: 34px;
@@ -84,6 +86,7 @@ body {
 }
 
 .app-item {
+  box-sizing: border-box;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -121,9 +124,8 @@ body {
 }
 
 .app-item img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 .app-item span {
@@ -132,6 +134,8 @@ body {
 }
 
 .select-button {
+  position: relative;
+  z-index: 2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -146,13 +150,9 @@ body {
   font-weight: 400;
   line-height: 22px;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   transition: background-color 0.3s;
   cursor: pointer;
-}
-
-a.select-button {
-  color: #fff !important;
 }
 
 .select-button--finish {
@@ -173,7 +173,8 @@ a.select-button {
 }
 
 .select-button[disabled] {
-  background-color: var(--text-grey);
+  background-color: var(--bg-grey);
+  color: var(--text-grey) !important;
   cursor: not-allowed;
 }
 
@@ -182,11 +183,11 @@ a.select-button {
 }
 
 .select-button--transparent.select-button:not([disabled]):hover path {
-  fill: #fff;
+  fill: #fff !important;
 }
 
 .select-button--transparent.select-button:not([disabled]):hover {
-  color: #fff;
+  color: #fff !important;
 }
 
 .link {
@@ -323,6 +324,8 @@ a.select-button {
 }
 
 .final-step__content {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,7 +336,6 @@ a.select-button {
   position: relative;
   margin-top: 35px;
   margin-bottom: 40px;
-  overflow: hidden;
 }
 
 .final-step__img-gradient {
