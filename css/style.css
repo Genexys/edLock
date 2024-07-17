@@ -27,7 +27,7 @@ body {
 .edlock-slider {
   max-width: 375px;
   width: 100%;
-  height: 636px;
+  /* height: 636px; */
   margin-top: 20px;
   margin-inline: auto;
   margin-bottom: 100px;
@@ -75,6 +75,10 @@ body {
   flex-direction: column;
   height: 100%;
   gap: calc(var(--padding-size) * 2);
+}
+
+.first-step .select-button--width {
+  margin-top: 50px;
 }
 
 .app-grid {
@@ -432,4 +436,33 @@ body {
   font-weight: 500;
   letter-spacing: -0.1rem;
   color: var(--text-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .app-grid {
+    grid-template-columns: repeat(2, minmax(110px, 110px));
+  }
+
+  .app-item {
+    width: 110px;
+    height: 110px;
+    padding-inline: 6px;
+  }
+
+  .app-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-item span {
+    font-size: 13px;
+  }
+
+  .second-step__content {
+    margin-bottom: 55px;
+  }
+
+  .second-step .select-button {
+    margin-top: 0;
+  }
 }
