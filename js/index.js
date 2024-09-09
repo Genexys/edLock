@@ -109,6 +109,11 @@ const customSlider = () => {
   updateSlider(input.value);
 }
 
+const playVideo = () => {
+  const video = document.getElementById('video');
+  video.play();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const sliderContent = document.getElementById('edlock_slider_content');
   const firstStepButton = document.getElementById('first-step-submit');
@@ -129,6 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   secondStepButton.addEventListener('click', () => {
     slideToNextStep();
+    
+    setTimeout(() => {
+      playVideo();
+    }, 400);
   });
 
   selectApp();

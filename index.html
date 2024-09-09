@@ -15,37 +15,39 @@
     <div id="edlock_slider_content" class="edlock-slider__content">
       <div id="first_step" class="first-step">
         <h3 class="edlock-slider__title edlock-slider__title--first">Выбери приложения, которые используешь в течение дня</h3>
-        <div class="app-grid">
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon@2x.png" alt="Соц. Сети">
-              <span>Соц. Сети</span>
-          </label>
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-2@2x.png" alt="Развлечения">
-              <span>Развлечения</span>
-          </label>
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-3@2x.png" alt="Стриминг">
-              <span>Стриминг</span>
-          </label>
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-4@2x.png" alt="Новости">
-              <span>Новости</span>
-          </label>
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-5@2x.png" alt="Мессенджеры">
-              <span>Мессенджеры</span>
-          </label>
-          <label class="app-item">
-              <input type="checkbox" class="app-item__input">
-              <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-6@2x.png" alt="Другое">
-              <span>Другое</span>
-          </label>
+        <div class="first-step__content">
+          <div class="app-grid">
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon@2x.png" alt="Соц. Сети">
+                <span>Соц. Сети</span>
+            </label>
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-2@2x.png" alt="Развлечения">
+                <span>Развлечения</span>
+            </label>
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-3@2x.png" alt="Стриминг">
+                <span>Стриминг</span>
+            </label>
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-4@2x.png" alt="Новости">
+                <span>Новости</span>
+            </label>
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-5@2x.png" alt="Мессенджеры">
+                <span>Мессенджеры</span>
+            </label>
+            <label class="app-item">
+                <input type="checkbox" class="app-item__input">
+                <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/icons_app/icon-6@2x.png" alt="Другое">
+                <span>Другое</span>
+            </label>
+          </div>
         </div>
         <button disabled type="button" id="first-step-submit" class="select-button select-button--width">Выбрать</button>
       </div>
@@ -110,8 +112,19 @@
           <h3 class="edlock-slider__title">А сейчас посмотрим как работает EdLock</h3>
           
           <div class="final-step__img-wrapper">
-            <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/final_screen_phone.png" alt="phone">
-          
+            <img src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/img/iPhone.png" alt="phone">
+            <video
+              loop
+              playsinline
+              webkit-playsinline
+              id="video"
+              src="https://cdn.jsdelivr.net/gh/genexys/edLock@master/screencast.mov" 
+              crossorigin="anonymous"
+              preload="metadata"
+              class="video"
+            >
+              Your browser does not support the video tag.
+            </video>
             <div class="final-step__img-gradient">
               <svg xmlns="http://www.w3.org/2000/svg" width="375" height="341" viewBox="0 0 375 341" fill="none">
                 <g filter="url(#filter0_f_1_154)">
